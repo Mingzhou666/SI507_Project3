@@ -12,7 +12,6 @@ DBNAME = 'choc.db'
 BARSCSV = 'flavors_of_cacao_cleaned.csv'
 COUNTRIESJSON = 'countries.json'
 
-
 print('\n*********** PART 1 ***********')
 # Creates a database called choc.db
 def create_choc_db():
