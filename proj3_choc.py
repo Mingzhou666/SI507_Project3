@@ -162,7 +162,6 @@ populate_choc_db()
 print("Populated choc Database")
 
 
-
 # Part 2: Implement logic to process user commands
 def bars_search(sort_by = 'ratings', num = 'top=10', place = None):
 	conn = sqlite3.connect(DBNAME)
