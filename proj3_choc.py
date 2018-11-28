@@ -347,7 +347,7 @@ def region_search(seller = 'sellers', sort_by = 'ratings', num = 'top=10'):
 
 
 
-
+# Process command implementation
 def process_command(command):
 	command_lst = command.split(' ')
 	return_lst = []
@@ -499,6 +499,7 @@ def load_help_text():
 	with open('help.txt') as f:
 		return f.read()
 
+
 # Part 3: Implement interactive prompt. We've started for you!
 def get_max_column_length(return_lst_tup, i):
 	max_len = 0
@@ -533,6 +534,7 @@ def interactive_prompt():
 		
 		if response == 'help':
 			print(help_text)
+			response = input('Enter a command: ')
 			continue
 
 		else:
@@ -545,8 +547,6 @@ def interactive_prompt():
 		response = input('Enter a command: ')
 
 	print('bye')
-
-
 
 
 # Make sure nothing runs or prints out when this file is run as a module
